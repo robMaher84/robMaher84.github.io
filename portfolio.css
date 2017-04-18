@@ -31,3 +31,11 @@ a:focus, a:hover {
     color: #014c8c;
     text-decoration: none;
 }
+
+.fancybox-slide>* {
+    background-color: gray !important;
+}
+
+.fancybox-slide--video .fancybox-content {
+	background:white;
+}

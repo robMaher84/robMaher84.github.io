@@ -7,3 +7,22 @@ body {
 }
 h1{
 border-bottom: 1px solid #d0d0d0;}
+
+figcaption{display:none;}
+.my-gallery{
+	clear:both;
+}
+.my-gallery a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    display: block;
+    float: left;
+    line-height: 0;
+    border: 1px solid #e9e8e8;
+    margin: 3px;
+}
+
+.work h3,h4{
+	clear: both;
+    padding-top: 20px;
+}

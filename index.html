@@ -9,8 +9,7 @@
   <title>Robert Maher | Portfolio</title>
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="portfolio.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/photoswipe.css">
-  <link rel="stylesheet" href="css/default-skin/default-skin.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
 	</head>
   <body>
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
@@ -34,6 +33,7 @@
         </ul>
       </div>
     </nav>
+    <!--
     <div class="container">
       <h1>Resume</h1>
       <h2>Qualifications</h2>
@@ -178,83 +178,79 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    -->
+    <div class="container work">
       <div class="row">
         <div class="col-lg-12">
-          <h1>Work</h1>
-            <div class="my-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
-              <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
-                  <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
-                </a>
-                <figcaption itemprop="caption description">Image caption 2.1</figcaption>
-              </figure>
-              <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
-                  <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
-                </a>
-                <figcaption itemprop="caption description">Image caption 2.2</figcaption>
-              </figure>
-              <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                <a href="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" itemprop="contentUrl" data-size="1024x768">
-                  <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
-                </a>
-                <figcaption itemprop="caption description">Image caption 2.3</figcaption>
-              </figure>
-            </div>
-          
-        </div>
-      </div>
-    </div>
 
-    <!--Image Gallery Controlls-->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="pswp__bg"></div>
-      <div class="pswp__scroll-wrap">
-        <div class="pswp__container">
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-        </div>
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-          <div class="pswp__top-bar">
-            <!--  Controls are self-explanatory. Order can be changed. -->
-            <div class="pswp__counter"></div>
-            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-            <button class="pswp__button pswp__button--share" title="Share"></button>
-            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-            <!-- element will get class pswp__preloader--active when preloader is running -->
-            <div class="pswp__preloader">
-              <div class="pswp__preloader__icn">
-                <div class="pswp__preloader__cut">
-                  <div class="pswp__preloader__donut"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-            <div class="pswp__share-tooltip"></div>
-          </div>
-          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-          </button>
-          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-          </button>
-          <div class="pswp__caption">
-            <div class="pswp__caption__center"></div>
-          </div>
+          <a class="fancybox" rel="group" href="img/niche/facebookSurveys/fallScholarshipScore.png">
+            <img src="img\niche\facebookSurveys/t-fallScholarshipScore.png" alt="" />
+          </a>
+          <a class="fancybox" rel="group" href="img/niche/facebookSurveys/tyScholarship.png">
+            <img src="img/niche/facebookSurveys/t-tyScholarship.png" alt="" />
+          </a>
+
+          <a class="fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo">
+            <img src="img/niche/facebookSurveys/t-tyScholarship.png" alt="" />
+          </a>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <!--Close Row-->
         </div>
       </div>
-    </div>
+
+    <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/photoswipe.min.js"></script>
-    <!-- UI JS file -->
-    <script src="js/photoswipe-ui-default.min.js"></script>
-    <script src="js/mygalleries.js"></script>
-  </body>
+
+    <!-- Add fancyBox -->
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $(".fancybox").fancybox();
+      $('.fancybox-media').fancybox({
+      openEffect  : 'none',
+      closeEffect : 'none',
+      helpers : {
+      media : {}
+      }
+      });
+      });
+
+    </script>
+      <!--Photoswipe-->
+    </body>
 </html>
+
+
+
+

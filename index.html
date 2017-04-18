@@ -9,7 +9,6 @@
   <title>Robert Maher | Portfolio</title>
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="portfolio.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
 	</head>
   <body>
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
@@ -182,23 +181,12 @@
     <div class="container work">
       <div class="row">
         <div class="col-lg-12">
-
-          <a class="fancybox" rel="group" href="img/niche/facebookSurveys/fallScholarshipScore.png">
-            <img src="img\niche\facebookSurveys/t-fallScholarshipScore.png" alt="" />
+          <a data-fancybox="gallery" href="img/niche/facebookSurveys/fallScholarshipScore.png">
+            <img src="img\niche\facebookSurveys/t-fallScholarshipScore.png">
           </a>
-          <a class="fancybox" rel="group" href="img/niche/facebookSurveys/tyScholarship.png">
+          <a data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">
             <img src="img/niche/facebookSurveys/t-tyScholarship.png" alt="" />
           </a>
-
-          <a class="fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo">
-            <img src="img/niche/facebookSurveys/t-tyScholarship.png" alt="" />
-          </a>
-          
-          
-          
-          
-          
-          
           
           
           
@@ -232,25 +220,13 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
 
     <!-- Add fancyBox -->
-    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-      $(".fancybox").fancybox();
-      $('.fancybox-media').fancybox({
-      openEffect  : 'none',
-      closeEffect : 'none',
-      helpers : {
-      media : {}
-      }
-      });
-      });
 
-    </script>
+
+
+      <script type="text/javascript" src="js/main.js"></script>
       <!--Photoswipe-->
     </body>
 </html>
-
-
-
-

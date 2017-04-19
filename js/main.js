@@ -4,4 +4,4 @@ $(function () {
 		height: 250,
         type: 'iframe',
     });
-});
+}); 

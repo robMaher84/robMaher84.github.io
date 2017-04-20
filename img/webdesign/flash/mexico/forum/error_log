@@ -1,0 +1,76 @@
+[02-Oct-2007 14:44:57] PHP Warning:  arsort() expects parameter 1 to be array, null given in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 170
+[02-Oct-2007 14:44:57] PHP Warning:  Invalid argument supplied for foreach() in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 204
+[02-Oct-2007 15:19:14] PHP Warning:  fopen(undefined/1191359954_Hey_.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 128
+[02-Oct-2007 15:19:14] PHP Warning:  fwrite(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 129
+[02-Oct-2007 15:19:14] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 130
+[02-Oct-2007 15:19:14] PHP Warning:  chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 133
+[02-Oct-2007 15:19:14] PHP Warning:  opendir(undefined) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 161
+[02-Oct-2007 15:19:14] PHP Warning:  readdir(): supplied argument is not a valid Directory resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 162
+[02-Oct-2007 15:19:14] PHP Warning:  arsort() expects parameter 1 to be array, null given in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 170
+[02-Oct-2007 15:19:14] PHP Warning:  Invalid argument supplied for foreach() in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 204
+[02-Oct-2007 15:19:14] PHP Warning:  closedir(): supplied argument is not a valid Directory resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 231
+[02-Oct-2007 15:19:14] PHP Warning:  fopen(undefined/1191359954_Hey_.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 238
+[02-Oct-2007 15:19:14] PHP Warning:  fread(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 239
+[02-Oct-2007 15:19:14] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 240
+[02-Oct-2007 15:24:38] PHP Warning:  fopen(undefined/1191360278_ad_asd.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 128
+[02-Oct-2007 15:24:38] PHP Warning:  fwrite(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 129
+[02-Oct-2007 15:24:38] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 130
+[02-Oct-2007 15:24:38] PHP Warning:  chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 133
+[02-Oct-2007 15:24:38] PHP Warning:  opendir(undefined) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 161
+[02-Oct-2007 15:24:38] PHP Warning:  readdir(): supplied argument is not a valid Directory resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 162
+[02-Oct-2007 15:24:38] PHP Warning:  arsort() expects parameter 1 to be array, null given in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 170
+[02-Oct-2007 15:24:38] PHP Warning:  Invalid argument supplied for foreach() in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 204
+[02-Oct-2007 15:24:38] PHP Warning:  closedir(): supplied argument is not a valid Directory resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 231
+[02-Oct-2007 15:24:38] PHP Warning:  fopen(undefined/1191360278_ad_asd.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 238
+[02-Oct-2007 15:24:38] PHP Warning:  fread(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 239
+[02-Oct-2007 15:24:38] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 240
+[02-Oct-2007 15:37:11] PHP Warning:  fopen(undefined/1191361031_r_a.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 128
+[02-Oct-2007 15:37:11] PHP Warning:  fwrite(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 129
+[02-Oct-2007 15:37:11] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 130
+[02-Oct-2007 15:37:11] PHP Warning:  chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 133
+[02-Oct-2007 15:37:11] PHP Warning:  opendir(undefined) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 161
+[02-Oct-2007 15:37:11] PHP Warning:  readdir(): supplied argument is not a valid Directory resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 162
+[02-Oct-2007 15:37:11] PHP Warning:  arsort() expects parameter 1 to be array, null given in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 170
+[02-Oct-2007 15:37:11] PHP Warning:  Invalid argument supplied for foreach() in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 204
+[02-Oct-2007 15:37:11] PHP Warning:  closedir(): supplied argument is not a valid Directory resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 231
+[02-Oct-2007 15:37:11] PHP Warning:  fopen(undefined/1191361031_r_a.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 238
+[02-Oct-2007 15:37:11] PHP Warning:  fread(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 239
+[02-Oct-2007 15:37:11] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 240
+[02-Oct-2007 15:45:56] PHP Warning:  fopen(undefined/1191361556_r_r.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 128
+[02-Oct-2007 15:45:56] PHP Warning:  fwrite(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 129
+[02-Oct-2007 15:45:56] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 130
+[02-Oct-2007 15:45:56] PHP Warning:  chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 133
+[02-Oct-2007 15:45:56] PHP Warning:  opendir(undefined) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 161
+[02-Oct-2007 15:45:56] PHP Warning:  readdir(): supplied argument is not a valid Directory resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 162
+[02-Oct-2007 15:45:56] PHP Warning:  arsort() expects parameter 1 to be array, null given in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 170
+[02-Oct-2007 15:45:56] PHP Warning:  Invalid argument supplied for foreach() in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 204
+[02-Oct-2007 15:45:56] PHP Warning:  closedir(): supplied argument is not a valid Directory resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 231
+[02-Oct-2007 15:45:56] PHP Warning:  fopen(undefined/1191361556_r_r.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 238
+[02-Oct-2007 15:45:56] PHP Warning:  fread(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 239
+[02-Oct-2007 15:45:56] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 240
+[02-Oct-2007 16:13:14] PHP Warning:  fopen(undefined/1191363194_Rob_Maher.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 128
+[02-Oct-2007 16:13:14] PHP Warning:  fwrite(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 129
+[02-Oct-2007 16:13:14] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 130
+[02-Oct-2007 16:13:14] PHP Warning:  chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 133
+[02-Oct-2007 16:13:14] PHP Warning:  opendir(undefined) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 161
+[02-Oct-2007 16:13:14] PHP Warning:  readdir(): supplied argument is not a valid Directory resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 162
+[02-Oct-2007 16:13:14] PHP Warning:  arsort() expects parameter 1 to be array, null given in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 170
+[02-Oct-2007 16:13:14] PHP Warning:  Invalid argument supplied for foreach() in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 204
+[02-Oct-2007 16:13:14] PHP Warning:  closedir(): supplied argument is not a valid Directory resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 231
+[02-Oct-2007 16:13:14] PHP Warning:  fopen(undefined/1191363194_Rob_Maher.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 238
+[02-Oct-2007 16:13:14] PHP Warning:  fread(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 239
+[02-Oct-2007 16:13:14] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 240
+[02-Oct-2007 16:15:05] PHP Warning:  fopen(undefined/1191363305_asdf_.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 128
+[02-Oct-2007 16:15:05] PHP Warning:  fwrite(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 129
+[02-Oct-2007 16:15:05] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 130
+[02-Oct-2007 16:15:05] PHP Warning:  chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 133
+[02-Oct-2007 16:15:05] PHP Warning:  opendir(undefined) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 161
+[02-Oct-2007 16:15:05] PHP Warning:  readdir(): supplied argument is not a valid Directory resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 162
+[02-Oct-2007 16:15:05] PHP Warning:  arsort() expects parameter 1 to be array, null given in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 170
+[02-Oct-2007 16:15:05] PHP Warning:  Invalid argument supplied for foreach() in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 204
+[02-Oct-2007 16:15:05] PHP Warning:  closedir(): supplied argument is not a valid Directory resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 231
+[02-Oct-2007 16:15:05] PHP Warning:  fopen(undefined/1191363305_asdf_.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 238
+[02-Oct-2007 16:15:05] PHP Warning:  fread(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 239
+[02-Oct-2007 16:15:05] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 240
+[02-Oct-2007 16:17:49] PHP Warning:  arsort() expects parameter 1 to be array, null given in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 170
+[02-Oct-2007 16:17:49] PHP Warning:  Invalid argument supplied for foreach() in /home/jackrabb/public_html/lucifersdisciples/mexico/forum/Forum.php on line 204

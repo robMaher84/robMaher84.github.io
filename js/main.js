@@ -1,7 +1,31 @@
 $(function () {
-    $('.video').fancybox({
-		width: 300,
-		height: 250,
-        type: 'iframe',
+	$("[data-fancybox]").fancybox({});
+	$("[data-fancybox]").click(function(){
+		$(".fancybox-content").css("width",  $(this).attr("mWidth") );
+		$(".fancybox-content").css( "height",$(this).attr("mHeight"));
+	});
+
+	$( document ).tooltip({
+      items: "[data-caption]",
+      content: function() {
+        var element = $( this );
+        if ( element.is( "[data-caption]" ) ) {
+          return element.attr( "data-caption" );
+        }
+      }
     });
-}); 
+	
+	$(".options img").click(function(){
+		console.log("clicked");
+		$(this).parent().find(".option").fadeIn();
+	});
+	$(".option").click(function(){
+		$(".options a").fadeOut();
+
+	});
+});
+
+
+
+
+

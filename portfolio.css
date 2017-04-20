@@ -27,9 +27,9 @@ figcaption{display:none;}
     padding-top: 20px;
 }
 
-a:focus, a:hover {
-    color: #014c8c;
-    text-decoration: none;
+.links a:focus, .links a:hover, .links a, .links a:active{
+    text-decoration: none !important;
+	outline:none !important;
 }
 
 .fancybox-slide>* {
@@ -38,4 +38,42 @@ a:focus, a:hover {
 
 .fancybox-slide--video .fancybox-content {
 	background:white;
+}
+
+
+
+.options{
+    display: inline-block;
+    position: relative;
+}
+
+.options{
+    display: inline-block;
+    position: relative;
+}
+.options img{
+    position: relative;
+    top: 0;
+    left: 0;
+	cursor:pointer;
+}
+
+.options a{
+	position: absolute;
+    top: 0px;
+    background-color: rgb(26, 72, 96);
+    width: 100px;
+    text-align: center;
+    height: 50px;
+    padding-top: 12px;
+	color:white;
+}
+
+.options .option.second{
+	top:50px;
+	background-color:#266b8f;
+}
+
+.hide{
+	display:None;
 }

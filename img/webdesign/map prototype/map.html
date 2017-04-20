@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Foundation 4</title>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600' rel='stylesheet' type='text/css'>
+	<link href="css/pika/ss-pika.css" rel="stylesheet" />
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="js/vendor/spin.min.js"></script>
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/map.css">
+	<script src="js/vendor/custom.modernizr.js"></script>
+
+
+</head>
+<body>
+<div class="mock-header-bar"></div>
+<div class="mock-demo-buttons">
+	<span style="display:block; background:silver;">Demo Buttons</span>
+	<div class="button show-loading">Show Loading</div>
+</div>
+<!--Mock School Nodes-->
+<div class="school-node green"></div>
+<div class="school-node yellow"></div>
+<div class="school-node red"></div>
+<div class="map-marker d-minus"></div>
+<div class="map-marker d"></div>
+<div class="map-marker d-plus"></div>
+<div class="map-marker c-minus"></div>
+<div class="map-marker c"></div>
+<div class="map-marker c-plus"></div>
+<div class="map-marker b-minus"></div>
+<div class="map-marker b"></div>
+<div class="map-marker b-plus"></div>
+<div class="map-marker c-minus"></div>
+<div class="map-marker c"></div>
+<div class="map-marker c-plus"></div>
+<div class="map-marker b-minus"></div>
+<div class="map-marker b"></div>
+<div class="map-marker b-plus"></div>
+<div class="map-marker a-minus"></div>
+<div class="map-marker a"></div>
+<div class="map-marker a-plus"></div>
+<div class="map-marker-shadow"></div>
+<div class="district-node">Pittsburgh Schools District</div>
+<div class="map-marker-popup">
+	<a href="#">School Name Here</a>
+</div>
+
+<!-- Map Holder -->
+<div class="map-wrapper">
+	<div class="filter-message">
+		Now showing 25 schools with 3 filters applied
+	</div>
+	<!--Zoom controls on right side of page-->
+	<div class="map-zoom-control">
+		<span class="zoom-in ss-icon">&#x002B;</span>
+		<span class="zoom-out ss-icon">&#x002D;</span>
+	</div>
+	<!--Main Desktop Control-->
+	<div class="desktop-control">
+		<!--Search Bar-->
+		<div class="map-search">
+			<form method="GET" autocomplete="off">
+				<div class="map-nav-button ss-icon">&#xE680;</div>
+				<input  placeholder="Search for your location" class="search-input niche-ac headerSearch ui-autocomplete-input">
+			</form>
+		</div>
+		<!--Tab Buttons-->
+		<div class="tabs">
+			<div class="map-tab results-tab">
+				<span class="ss-icon">&#xE673;</span> Results
+			</div>
+			<div class="map-tab filters-tab disabled">
+				<span class="ss-icon">&#x2699;</span> Filters
+			</div>
+		</div>
+		<!-- Loading Panel-->
+		<div class="map-panel loading-panel"></div>
+		<!--District Panel-->
+		<div class="info-panel district map-panel">
+			<div class="close-holder">
+				<div class="ss-icon school-panel-close-button">
+					&#x2421;
+				</div>
+			</div>
+			<div class="header-card">
+				<div class="niche-letter-grade a-plus"></div>
+				<div class="school-info">
+					<span class="school-name">Pittsburgh School District</span>
+					<span>Pittsburgh, PA 15213</span>
+				</div>
+			</div>
+			<ul>
+				<li class="jump-to-school">View this district's full profile <span class="ss-icon">&#xEE00;</span></li>
+				<li class="best-of">
+					<span>Highest Graduation Rate</span>
+					<a href='#'>99% North Catholic High School</a>
+					<span>Top Reading Proficiency Percentile</span>
+					<a href='#'>98% Taylor Allderdice High School</a>
+					<span>Top Math Proficiency Percentile</span>
+					<a href='#'>99% Taylor Allderdice High School</a>
+					<a href="#">View the full listing</a>
+				</li>
+				<li>Total Schools <span>87</span></li>
+				<li>Students<span>10,021 </span></li>
+				<li>Avg. Graduation Rate <span>91%</span></li>
+				<li>Avg. Avg. ACT Score <span>17</span></li>
+			</ul>
+			<div class="section-jump">
+				<h5>Section Jump</h5>
+				<div class="row">
+					<div class="large-6 column">
+						<a href="#">School Home</a>
+						<a href="#">Academics</a>
+						<a href="#">Administration & Policies</a>
+						<a href="#">Educational Outcomes</a>
+						<a href="#">Extracurriculars</a>
+						<a href="#">Food</a>
+					</div>
+					<div class="large-6 column">
+						<a href="#">Health & Safety</a>
+						<a href="#">Resources & Facilities</a>
+						<a href="#">Sports & Fitness</a>
+						<a href="#">Student Culture & Diversity</a>
+						<a href="#">Teachers</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--School Detail panel-->
+		<div class="info-panel school map-panel">
+			<div class="close-holder">
+				<div class="ss-icon school-panel-close-button">
+					&#x2421;
+				</div>
+			</div>
+			<div class="header-card">
+				<div class="niche-letter-grade a-plus"></div>
+				<div class="school-info">
+					<span class="school-name">Winchester Thurston School </span>
+					<span>55 Morewood Ave</span>
+					<span>Pittsburgh, PA 15213</span>
+				</div>
+			</div>
+			<ul>
+				<li class="jump-to-school">View this school's full profile <span class="ss-icon">&#xEE00;</span></li>
+				<li>Type <span>Public Traditional</span></li>
+				<li>Grades <span>9-12</span></li>
+				<li>Setting <span>Large City</span></li>
+				<li>Reviews <span>268</span></li>
+				<li>Students <span>1,359</span></li>
+				<li>Graduation Rate <span>88%</span></li>
+				<li>ACT <span>17</span></li>
+				<li>Math Proficiency <span>8%</span></li>
+				<li>Student / Teacher Ratio<span>1/20</span></li>
+			</ul>
+			<div class="section-jump">
+				<h5>Section Jump</h5>
+				<div class="row">
+					<div class="large-6 column">
+						<a href="#">School Home</a>
+						<a href="#">Academics</a>
+						<a href="#">Administration & Policies</a>
+						<a href="#">Educational Outcomes</a>
+						<a href="#">Extracurriculars</a>
+						<a href="#">Food</a>
+					</div>
+					<div class="large-6 column">
+						<a href="#">Health & Safety</a>
+						<a href="#">Resources & Facilities</a>
+						<a href="#">Sports & Fitness</a>
+						<a href="#">Student Culture & Diversity</a>
+						<a href="#">Teachers</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Filter Panel-->
+		<div class="filters-panel map-panel">
+			<div class="filter-top">
+				Find the perfect school by adjusting the filters below
+			</div>
+			<form class="custom custom-dropdown">
+				<div class="row range">
+					<div class="large-12 columns">
+						<span class="filter-title">Niche Grade</span>
+					</div>
+					<div class="large-6 column">
+						<span class="range-title">Min</span>
+						<select>
+							<option>A+</option>
+							<option>A</option>
+							<option>A-</option>
+							<option>B+</option>
+							<option>B</option>
+							<option>B-</option>
+							<option>C+</option>
+							<option>C</option>
+							<option>C-</option>
+							<option>D+</option>
+							<option>D</option>
+							<option selected>D-</option>
+						</select>
+					</div>
+					<div class="large-6 column">
+						<span class="range-title">Max</span>
+						<select>
+							<option selected>A+</option>
+							<option>A</option>
+							<option>A-</option>
+							<option>B+</option>
+							<option>B</option>
+							<option>B-</option>
+							<option>C+</option>
+							<option>C</option>
+							<option>C-</option>
+							<option>D+</option>
+							<option>D</option>
+							<option>D-</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<span class="filter-title">Grade Level</span>
+					</div>
+					<div class="large-4 columns">
+						<label for="checkbox1">
+							<input type="checkbox" id="checkbox5" style="display: none;">
+							<span class="custom checkbox"></span> Elementary
+						</label>
+					</div>
+					<div class="large-4 columns">
+						<label for="checkbox1">
+							<input type="checkbox" id="checkbox6" style="display: none;">
+							<span class="custom checkbox"></span> Middle
+						</label>
+					</div>
+					<div class="large-4 columns">
+						<label for="checkbox1">
+							<input type="checkbox" id="checkbox7" style="display: none;">
+							<span class="custom checkbox"></span> High
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-6 column">
+						<span class="filter-title">Split Column</span>
+						<select>
+							<option>Filter</option>
+							<option>Filter</option>
+							<option>Filter</option>
+						</select>
+					</div>
+					<div class="large-6 column">
+						<span class="filter-title">Split Column</span>
+						<select>
+							<option>Filter</option>
+							<option>Filter</option>
+							<option>Filter</option>
+							<option>Filter</option>
+							<option>Filter</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 column">
+						<span class="filter-title">Full Column</span>
+						<select>
+							<option>Filter</option>
+							<option>Filter</option>
+							<option>Filter</option>
+						</select>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="large-12 columns">
+						<span class="filter-title">School Type</span>
+					</div>
+					<div class="large-6 columns">
+						<label for="checkbox1">
+							<input type="checkbox" id="checkbox1" style="display: none;">
+							<span class="custom checkbox"></span> Public Traditional
+						</label>
+						<label for="checkbox1">
+							<input type="checkbox" id="checkbox2" style="display: none;">
+							<span class="custom checkbox"></span> Magnet
+						</label>
+					</div>
+					<div class="large-6 columns">
+						<label for="checkbox1">
+							<input type="checkbox" id="checkbox3" style="display: none;">
+							<span class="custom checkbox"></span> Charter
+						</label>
+						<label for="checkbox1">
+							<input type="checkbox" id="checkbox4" style="display: none;">
+							<span class="custom checkbox"></span> Private
+						</label>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!--Results Panel - Sorting Drop Down-->
+		<div class="sorting">
+			<form class="custom custom-dropdown">
+				<select>
+					<option>Sort by Niche Grade - high to low</option>
+					<option>Sort by Niche Grade - high to low</option>
+					<option>Sort by Niche Grade - high to low</option>
+					<option>Sort by Niche Grade - high to low</option>
+					<option>Sort by Niche Grade - high to low</option>
+				</select>
+			</form>
+		</div>
+		<!--Listings Container-->
+		<div class="results-holder">
+			<div class="results-listing">
+				<div class="listing-item">
+					<div class="niche-letter-grade"></div>
+					<a href="#">Fox Chappel Area High School</a>
+					<span>Pittsburgh Public Schools</span>
+					<ul>
+						<li>
+							<span>Grade Rate</span>
+							97%
+						</li>
+						<li>
+							<span>Students</span>
+							1,113
+						</li>
+						<li>
+							<span>Type</span>
+							Public Traditional
+						</li>
+					</ul>
+				</div>
+				<div class="listing-item">
+					<div class="niche-letter-grade a"></div>
+					<a href="#">Fox Chappel Area High School</a>
+					<span>Pittsburgh Public Schools</span>
+					<ul>
+						<li>
+							<span>Grade Rate</span>
+							97%
+						</li>
+						<li>
+							<span>Students</span>
+							1,113
+						</li>
+						<li>
+							<span>Type</span>
+							Public Traditional
+						</li>
+					</ul>
+				</div>
+				<div class="listing-item">
+					<div class="niche-letter-grade a-minus"></div>
+					<a href="#">Fox Chappel Area High School</a>
+					<span>Pittsburgh Public Schools</span>
+					<ul>
+						<li>
+							<span>Grade Rate</span>
+							97%
+						</li>
+						<li>
+							<span>Students</span>
+							1,113
+						</li>
+						<li>
+							<span>Type</span>
+							Public Traditional
+						</li>
+					</ul>
+				</div>
+				<div class="listing-item">
+					<div class="niche-letter-grade b-plus"></div>
+					<a href="#">Fox Chappel Area High School</a>
+					<span>Pittsburgh Public Schools</span>
+					<ul>
+						<li>
+							<span>Grade Rate</span>
+							97%
+						</li>
+						<li>
+							<span>Students</span>
+							1,113
+						</li>
+						<li>
+							<span>Type</span>
+							Public Traditional
+						</li>
+					</ul>
+				</div>
+				<div class="listing-item">
+					<div class="niche-letter-grade b"></div>
+					<a href="#">Fox Chappel Area High School</a>
+					<span>Pittsburgh Public Schools</span>
+					<ul>
+						<li>
+							<span>Grade Rate</span>
+							97%
+						</li>
+						<li>
+							<span>Students</span>
+							1,113
+						</li>
+						<li>
+							<span>Type</span>
+							Public Traditional
+						</li>
+					</ul>
+				</div>
+				<div class="listing-item">
+					<div class="niche-letter-grade b-minus"></div>
+					<a href="#">Fox Chappel Area High School</a>
+					<span>Pittsburgh Public Schools</span>
+					<ul>
+						<li>
+							<span>Grade Rate</span>
+							97%
+						</li>
+						<li>
+							<span>Students</span>
+							1,113
+						</li>
+						<li>
+							<span>Type</span>
+							Public Traditional
+						</li>
+					</ul>
+				</div>
+				<div class="listing-item">
+					<div class="niche-letter-grade c-plus"></div>
+					<a href="#">Fox Chappel Area High School</a>
+					<span>Pittsburgh Public Schools</span>
+					<ul>
+						<li>
+							<span>Grade Rate</span>
+							97%
+						</li>
+						<li>
+							<span>Students</span>
+							1,113
+						</li>
+						<li>
+							<span>Type</span>
+							Public Traditional
+						</li>
+					</ul>
+				</div>
+				<div class="listing-item">
+					<div class="niche-letter-grade c"></div>
+					<a href="#">Fox Chappel Area High School</a>
+					<span>Pittsburgh Public Schools</span>
+					<ul>
+						<li>
+							<span>Grade Rate</span>
+							97%
+						</li>
+						<li>
+							<span>Students</span>
+							1,113
+						</li>
+						<li>
+							<span>Type</span>
+							Public Traditional
+						</li>
+					</ul>
+				</div>
+				<div class="listing-item">
+					<div class="niche-letter-grade c-minus"></div>
+					<a href="#">Fox Chappel Area High School</a>
+					<span>Pittsburgh Public Schools</span>
+					<ul>
+						<li>
+							<span>Grade Rate</span>
+							97%
+						</li>
+						<li>
+							<span>Students</span>
+							1,113
+						</li>
+						<li>
+							<span>Type</span>
+							Public Traditional
+						</li>
+					</ul>
+				</div>
+				<div class="listing-item">
+					<div class="niche-letter-grade d-plus"></div>
+					<a href="#">Fox Chappel Area High School</a>
+					<span>Pittsburgh Public Schools</span>
+					<ul>
+						<li>
+							<span>Grade Rate</span>
+							97%
+						</li>
+						<li>
+							<span>Students</span>
+							1,113
+						</li>
+						<li>
+							<span>Type</span>
+							Public Traditional
+						</li>
+					</ul>
+				</div>
+				<div class="listing-item">
+					<div class="niche-letter-grade d"></div>
+					<a href="#">Fox Chappel Area High School</a>
+					<span>Pittsburgh Public Schools</span>
+					<ul>
+						<li>
+							<span>Grade Rate</span>
+							97%
+						</li>
+						<li>
+							<span>Students</span>
+							1,113
+						</li>
+						<li>
+							<span>Type</span>
+							Public Traditional
+						</li>
+					</ul>
+				</div>
+				<div class="listing-item">
+					<div class="niche-letter-grade d-minus"></div>
+					<a href="#">Fox Chappel Area High School</a>
+					<span>Pittsburgh Public Schools</span>
+					<ul>
+						<li>
+							<span>Grade Rate</span>
+							97%
+						</li>
+						<li>
+							<span>Students</span>
+							1,113
+						</li>
+						<li>
+							<span>Type</span>
+							Public Traditional
+						</li>
+					</ul>
+				</div>
+				<div class="listing-item">
+					<div class="niche-letter-grade f"></div>
+					<a href="#">Fox Chappel Area High School</a>
+					<span>Pittsburgh Public Schools</span>
+					<ul>
+						<li>
+							<span>Grade Rate</span>
+							97%
+						</li>
+						<li>
+							<span>Students</span>
+							1,113
+						</li>
+						<li>
+							<span>Type</span>
+							Public Traditional
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--Listings Pagination-->
+		<div class="pagination-footer">
+			<ul class="pagination">
+				<li class="arrow unavailable"><a href="">&laquo;</a></li>
+				<li class="current"><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li class="unavailable"><a href="">&hellip;</a></li>
+				<li><a href="">12</a></li>
+				<li><a href="">13</a></li>
+				<li class="arrow"><a href="">&raquo;</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script src="js/foundation/foundation.js"></script>
+
+<script src="js/foundation/foundation.forms.js"></script>
+<script>
+if ($('.custom-dropdown').length > 0) {
+  	var t = setTimeout(function () { $(document).foundation(); }, 0);
+}
+$(document).ready(function () {
+  	$('.loading-panel').spin({
+  		color: '#53A63A',
+  		radius: 30,
+  		length: 20,
+  		top: '50'
+  	});
+  	$('.results-tab').click(function () {
+  		$(this).removeClass('disabled');
+  		$('.filters-tab').addClass('disabled');
+  		$('.filters-panel').hide();
+  	});
+  	$('.filters-tab').click(function () {
+  		$(this).removeClass('disabled');
+  		$('.results-tab').addClass('disabled');
+  		$('.filters-panel').show();
+  	});
+  	$('.school-node, .listing-item').click(function () {
+  		$('.info-panel.school').slideDown("fast");
+  		$('.info-panel.district').slideUp("fast");
+  	});
+  	$('.district-node').click(function () {
+  		$('.info-panel.district').slideDown("fast");
+  		$('.info-panel.school').slideUp("fast");
+
+  	});
+  	$('.close-holder').click(function () {
+  		$(this).parent().slideUp("fast");
+  	});
+  	$('.show-loading').click(function () {
+		$('.loading-panel').toggle();
+  	});
+});
+</script>
+</body>
+</html>

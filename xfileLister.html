@@ -1,0 +1,42 @@
+
+<!-- saved from url=(0069)file:///C:/Users/Robert%20Maher/Dropbox/Blossom_Tales/fileLister.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body>
+<input type="file" multiple="multiple" name="upload" id="id_upload">
+
+<br>
+  <textarea id="pathName" style="width:100%; height:50px;"></textarea>
+  <textarea id="groupName" style="width:100%; height:50px;"></textarea>
+<form action="" method="" name="form" style="display:inline-block;width:49%;">
+   <textarea name="textarea" rows="" cols="" style="width:100%; height:400px;"></textarea>
+</form>
+
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script>
+    //img\niche\logo
+    uploader = document.getElementById("id_upload");
+    uploader.onchange = function(e) {
+    topList();
+    };
+
+    function topList() {
+    var elem = document.getElementById("id_upload");
+    var names = [];
+    var namesList = "";
+    for (var i = 0; i < elem.files.length; ++i) {
+    namesList = namesList.concat(
+    '<a  href="' +
+    $("#pathName").val().replace(/\\/g, "/")+'/' + elem.files[i].name.toString()
+      + '" data-fancybox="'+  $("#groupName").val() +'">' + "\n"
+      + '<img src="' 
+    + $("#pathName").val().replace(/\\/g, "/")+ '/thumbs/' + elem.files[i].name.toString()
+    + '"/></a>'
+    , "\n");
+    }
+
+    console.log(namesList);
+    document.form.textarea.value = "";
+    document.form.textarea.value = document.form.textarea.value += namesList;
+    }
+  </script>
+</body></html>

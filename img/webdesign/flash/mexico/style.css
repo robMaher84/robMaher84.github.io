@@ -1,0 +1,16 @@
+/* CSS Document */
+
+* {margin:0; padding:0;}
+
+body { background:#000000;}
+
+table { 
+	border:0px;
+	border-collapse:collapse;
+	width:100%;
+	height:100%;
+}
+
+#main {width:766px; height:750px;  margin:0 auto;}
+
+

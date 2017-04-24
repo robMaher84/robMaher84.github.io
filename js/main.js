@@ -5,16 +5,6 @@ $(function () {
 		$(".fancybox-content").css("width",  $(this).attr("mWidth") );
 		$(".fancybox-content").css( "height",$(this).attr("mHeight"));
 	});
-	/*
-	$( document ).tooltip({
-      items: "[data-caption]",
-      content: function() {
-        var element = $( this );
-        if ( element.is( "[data-caption]" ) ) {
-          return element.attr( "data-caption" );
-        }
-      }
-    });*/
 	$(".options img").click(function(){
 		$(this).parent().find(".option").fadeIn();
 	});

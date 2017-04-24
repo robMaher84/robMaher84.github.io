@@ -5,7 +5,6 @@ $(function () {
 		$(".fancybox-content").css("width",  $(this).attr("mWidth") );
 		$(".fancybox-content").css( "height",$(this).attr("mHeight"));
 	});
-
 	/*$( document ).tooltip({
       items: "[data-caption]",
       content: function() {
@@ -22,6 +21,11 @@ $(function () {
 	$(".option").click(function(){
 		$(".options a").fadeOut();
 
+	});
+	$('.nav-link').on('click', function () {
+		console.log("running");
+	  $('.navbar-collapse').removeClass('show');
+	  $(this).addClass('active');
 	});
 });
 

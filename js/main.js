@@ -1,11 +1,12 @@
 $(function () {
-	$("[data-fancybox]").fancybox({});
+	$("[data-fancybox]").fancybox({
+	});
 	$("[data-fancybox]").click(function(){
 		$(".fancybox-content").css("width",  $(this).attr("mWidth") );
 		$(".fancybox-content").css( "height",$(this).attr("mHeight"));
 	});
 
-	$( document ).tooltip({
+	/*$( document ).tooltip({
       items: "[data-caption]",
       content: function() {
         var element = $( this );
@@ -13,10 +14,9 @@ $(function () {
           return element.attr( "data-caption" );
         }
       }
-    });
+    });*/
 	
 	$(".options img").click(function(){
-		console.log("clicked");
 		$(this).parent().find(".option").fadeIn();
 	});
 	$(".option").click(function(){

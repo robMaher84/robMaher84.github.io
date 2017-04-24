@@ -27,11 +27,17 @@ figcaption{display:none;}
     padding-top: 20px;
 }
 
-.links a:focus, .links a:hover, .links a, .links a:active{
+  .links a{
     text-decoration: none !important;
 	outline:none !important;
+    margin-bottom: 5px;
+    display: inline-block;
+	border:11px solid #1a4860;
 }
-
+.links a:hover,.links a:focus,.links a:active{
+	text-decoration: none !important;
+	outline:none !important;
+}
 .fancybox-slide>* {
     background-color: gray !important;
 }
@@ -40,16 +46,16 @@ figcaption{display:none;}
 	background:white;
 }
 
-
-
-.options{
-    display: inline-block;
-    position: relative;
+h1 .small{
+	font-size:30%;
 }
 
+
 .options{
     display: inline-block;
     position: relative;
+	border:11px solid #1a4860;
+
 }
 .options img{
     position: relative;
@@ -67,6 +73,8 @@ figcaption{display:none;}
     height: 50px;
     padding-top: 12px;
 	color:white;
+	display:none;
+	border:none;
 }
 
 .options .option.second{

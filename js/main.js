@@ -14,7 +14,6 @@ $(function () {
         }
       }
     });*/
-	
 	$(".options img").click(function(){
 		$(this).parent().find(".option").fadeIn();
 	});

@@ -32,7 +32,7 @@ figcaption{display:none;}
 	outline:none !important;
     margin-bottom: 5px;
     display: inline-block;
-	border:4px solid #1a4860;
+	border:2px solid #1a4860;
 }
 .links a:hover,.links a:focus,.links a:active{
 	text-decoration: none !important;
@@ -54,7 +54,7 @@ h1 .small{
 .options{
     display: inline-block;
     position: relative;
-	border:4px solid #1a4860;
+	border:2px solid #1a4860;
 
 }
 .options img{

@@ -5,7 +5,8 @@ $(function () {
 		$(".fancybox-content").css("width",  $(this).attr("mWidth") );
 		$(".fancybox-content").css( "height",$(this).attr("mHeight"));
 	});
-	/*$( document ).tooltip({
+	/*
+	$( document ).tooltip({
       items: "[data-caption]",
       content: function() {
         var element = $( this );
@@ -19,12 +20,13 @@ $(function () {
 	});
 	$(".option").click(function(){
 		$(".options a").fadeOut();
-
 	});
 	$('.nav-link').on('click', function () {
-		console.log("running");
-	  $('.navbar-collapse').removeClass('show');
-	  $(this).addClass('active');
+	  	$('.nav-item').removeClass("active");
+		$('.nav-link').removeClass("active");
+		$('.navbar-collapse').removeClass('show');
+		$(this).addClass('active');
+		$(this).parent().addClass('active');
 	});
 });
 

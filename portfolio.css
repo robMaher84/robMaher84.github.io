@@ -83,3 +83,34 @@ h1 .small{
 .hide{
 	display:None;
 }
+
+
+@media only screen and (max-width: 500px) {
+    h1{
+		font-size:1.8rem;
+	}
+	h2{
+		font-size:1.7rem;
+		color:#7b7b7b;
+	}
+	h3{
+		font-size:1.5rem;
+	}
+	h3{
+		font-size:1.25rem;
+	}
+	h4{
+		font-size:1rem
+	}
+	h5{
+		font-size:1.15rem;
+	}
+
+	.work h3,h4{
+		clear: both;
+		padding-top: 0px;
+	}
+	.container ul{
+		padding-left:1.5rem;
+	}
+}

@@ -7,7 +7,7 @@ angular
     console.log(paramObj);
     return $http({
       method: 'GET',
-      url: "http://www.omdbapi.com/",
+      url: "https://www.omdbapi.com/",
       params: paramObj
     });
   };

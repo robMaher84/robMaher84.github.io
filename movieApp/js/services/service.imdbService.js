@@ -11,7 +11,6 @@ angular
       params: paramObj
     });
   };
-
   return {
     events: function(paramObj) {
       return runUserRequest(paramObj);

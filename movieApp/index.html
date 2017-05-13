@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="movieApp">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Robert Maher's portfolio website">
+  <meta name="author" content="">
+  <title>Rivers Agile | IMDB Test</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+		</head>
+  <body ng-controller="movieSearchCtrl">
+    <div class="container" ng-controller="myMovieListController">
+      <div class="row" >
+        <div class="col-md-4 panel" >
+          My Lists<br>
+          <ul>
+            <li ng-repeat="list in myMoviesLists" ng-class="{'green':selectedMultiLists.indexOf($index)!=-1}" ng-click="buildTargetList(list.listName);toggleMultiList($index);">{{list.listName}}</li>
+            <button ng-click="addMovieToLists(searchedForMovie)">Add Movie To Selected Lists</button>
+          </ul>
+        </div>
+        <div class="col-md-8 panel">
+          Search for Movie:<input type="text" typeahead-on-select="grabMovieData()" ng-model="movieSearch" onclick="select()" placeholder="Enter Movie Name" uib-typeahead="result as result.suggest for result in getSuggest($viewValue)" typeahead-min-length="3" autofocus>
+          <br>
+            {{searchedForMovie.Title}}
+            <img ng-src="{{searchedForMovie.Poster}}" class="moviePosterThumb">Name: {{searchedForMovie.Title}} | Year: {{searchedForMovie.Year}} | Genre: {{searchedForMovie.Genre}} | IMDB Rating: {{searchedForMovie.Ratings[0].Value}}<br>
+            My Rating: 
+            <span ng-class="{ green : searchedForMovie.MyUserRating == 'good'}" ng-click="rateMovie(searchedForMovie.Title,'good'); searchedForMovie.MyUserRating = 'good';">Good</span> |
+            <span ng-class="{ bad : searchedForMovie.MyUserRating == 'bad'}"    ng-click="rateMovie(searchedForMovie.Title,'bad'); searchedForMovie.MyUserRating = 'bad';"   >Bad</span><br>
+        </div>
+      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 panel">
+          <div ng-include="'./partials/createAListForm.html'"></div>
+        </div>
+        <div class="col-md-8 panel">
+          <div ng-include="'./partials/myMovieLists.html'"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Bootstrap-->
+    <script src="js/base/angular.min.js"></script>
+    <script src="js/base/ui-bootstrap-custom-tpls-0.14.3.min.js"></script>
+    <script src="js/movieApp.js"></script>
+    <!--Controllers-->
+    <script src="js/controllers/controller.moviesearch.js"></script>
+    <script src="js/controllers/controller.createlistform.js"></script>
+    <script src="js/controllers/controller.mymovielists.js"></script>
+    <!--Services-->
+    <script src="js/services/service.imdbService.js"></script>
+    <script src="js/services/service.myListsService.js"></script>
+    <!--Directives-->
+    <script src="js/directives/directive.movieSearch.js"></script>
+    </body>
+</html>

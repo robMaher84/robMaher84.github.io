@@ -1,0 +1,26 @@
+<div >
+    test
+    <ul>
+        <li ng-repeat="movie in myMoviesLists" ng-class="{'green': selectedLists.indexOf($index)!=-1}" ng-click="showMoviesInList($index); toggleMovieList($index)">{{movie.listName}}</li>
+    </ul>
+    <div>
+        <input type ="text" ng-model="searchFilter" placeholder="Search for Movies in List"><br>
+        Sort by: <button ng-click="sortBy('Title')">Title</button><button ng-click="sortBy('-Ratings[0].Value')">IMDB Rating</button>
+        Add a movie:<input type="text" typeahead-on-select="addMovieToList()" ng-model="async" onclick="select()" placeholder="Enter Movie Name" uib-typeahead="result as result.suggest for result in getSuggest($viewValue)" typeahead-min-length="3" autofocus>
+        List Name: {{selectedList.listName}}<br>
+        Movies In List: {{selectedList.moviesForList.length}}
+        Average Rating: {{averageRating}}
+        
+        <ul>
+            <li ng-repeat="movie in moviesInSelectedList | filter: searchFilter | orderBy: sortingOption" >
+                <div class="movieListItem">
+                    <img ng-src="{{movie.Poster}}" class="moviePosterThumb">Name: {{movie.Title}} | Year: {{movie.Year}} | Genre: {{movie.Genre}} | IMDB Rating: {{movie.Ratings[0].Value}}<br>
+                    My Rating: 
+                    <span ng-class="{ green : movie.MyUserRating == 'good'}" ng-click="rateMovie(movie.Title,'good')">Good</span> |
+                    <span ng-click="rateMovie(movie.Title,'bad')"  ng-class="{ bad : movie.MyUserRating == 'bad'}" >Bad</span><br>
+                   <button ng-click="removeMovieFromList(movie.Title)">REMOVE</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

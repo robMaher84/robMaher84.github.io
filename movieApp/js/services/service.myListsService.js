@@ -5,7 +5,7 @@ angular
 		// Retrieve the object from storage
 		var myListFactory = {};
 		var myLists = [];
-		var storageName = "abc1";
+		var storageName = "asdfz1444332";
 		myListFactory.movieRating;
 		myListFactory.myLists = angular.fromJson(localStorage.getItem(storageName));
 
@@ -15,6 +15,7 @@ angular
 		}
 
 		myListFactory.createList = function (listName, moviesForList) {
+			
 			JSON.parse(myListFactory.myLists.push({ listName, moviesForList }));
 			localStorage.setItem(storageName, angular.toJson(myListFactory.myLists));
 		}
@@ -38,7 +39,6 @@ angular
 
 		myListFactory.removeMovieFromList = function (listName, movieIndex) {
 			angular.forEach(myListFactory.myLists, function (list) {
-				console.log(list);
 				if (list.listName == listName) {
 					list.moviesForList.splice(movieIndex, 1);
 					myListFactory.saveList();

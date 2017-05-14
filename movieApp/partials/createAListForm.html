@@ -1,9 +1,25 @@
-<div ng-controller="createListFormCtrl">
-    List Title:<input type="text" ng-model="listName" placeholder="Enter a list title"><br>
-    Add a movie:<movie-search></movie-search>
-    <ul>
-        <li ng-repeat="movie in movieList">{{movie.Title}}<button ng-click="removeFromList($index)">Remove</button></li>
-    </ul>
-    <button ng-click="createList()">Create list</button>
-    
+<div ng-controller="createListFormCtrl" class="ng-cloak">
+    <h3>Create A List</h3>
+    <input class="form-control" type="text" ng-model="listName" placeholder="Enter a list title">
+    <movie-search></movie-search>
+    <div ng-if="movieList.length == 0" class="alert alert-info" role="alert">
+        Enter a list name and add some movies!
+    </div>
+    <table class="table table-hover" ng-hide="movieList.length == 0">
+        <thead>
+            <tr>
+                <th>Movies</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="movie in movieList">
+                <td>
+                    {{movie.Title}}
+                    <button ng-click="removeFromList($index)" class="btn btn-warning pull-right remove-btn" ><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="btn btn-success" ng-click="createList()">Create list</button>
 </div>

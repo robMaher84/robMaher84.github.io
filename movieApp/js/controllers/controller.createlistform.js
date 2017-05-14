@@ -10,7 +10,6 @@ angular
           if (response.data.Title != "Undefined" && !$scope.containsMovieTitle(response.data.Title, $scope.movieList)) {
             response.data["MyUserRating"] = myListsService.getMovieRating(response.data.Title);
             $scope.movieList.push(response.data);
-            console.log($scope.movieList);
           } else { alert("That movie is already in your list") }
           $scope.async = "";
         });
@@ -27,6 +26,8 @@ angular
           if ($scope.movieList.length >= 1) 
           {
             myListsService.createList($scope.listName, $scope.movieList);
+            $scope.$parent.showMoviesInList(0);
+            $scope.$parent.toggleMovieList(0);
             $scope.listName = "";
             $scope.movieList = [];
           }
@@ -42,7 +43,7 @@ angular
     $scope.containsMovieTitle = function (obj, list) {
       var i;
       for (i = 0; i < list.length; i++) {
-        if (list[i] === obj) {
+        if (list[i].Title === obj) {
           return true;
         }
       }

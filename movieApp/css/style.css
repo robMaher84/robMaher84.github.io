@@ -1,101 +1,12 @@
-body {
-    background: #b3b3b0;
+body{
+        background: #b3b3b0;
     background: -webkit-linear-gradient(top, #b3b3b0 0%, #e3e2dd 500px);
-    background: linear-gradient(top, #b3b3b0 0%, #e3e2dd 500px);
+    background: linear-gradient(top, #b3b3b0 0%,#e3e2dd 500px);
     background-color: #e3e2dd;
     background-repeat: no-repeat;
-    padding-top: 20px;
 }
-.panel {
-    border: 1px solid lightgray;
-    padding: 20px;
+
+.panel{
+    border:1px solid lightgray;
 }
-.movieListDescription {
-    padding: 0;
-}
-.panel.moviePanel {
-    margin-bottom: 10px;
-    position: relative;
-    padding: 10px;
-}
-h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-.ratingThumb {
-    border: 1px solid #b7b7b7;
-    padding: 6px;
-    border-radius: 4px;
-    font-size: 20px;
-}
-.green.ratingThumb {
-    color: white;
-    background-color: #449d44;
-}
-.bad.ratingThumb {
-    color: white;
-    background-color: #d9534f;
-}
-.moviePosterThumb {
-    max-height: 130px;
-}
-.green {
-    color: green;
-}
-.bad {
-    color: red;
-}
-.form-control {
-    margin-bottom: 10px;
-}
-.alert {
-    margin-top: 10px;
-}
-.remove-btn {
-    padding-left: 4px;
-    padding-right: 3px;
-    padding-top: 1px;
-    padding-bottom: 0px;
-}
-.moviePanel .remove-btn {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-tr {
-    cursor: pointer;
-}
-.bg-success {
-    background-color: #dff0d8 !important;
-}
-.input-group {
-    margin-bottom: 10px;
-}
-.dropdown-menu {
-    width: 98%;
-    overflow-x: hidden;
-}
-.media-body,
-{
-    margin-top: 10px;
-}
-.ng-cloak {
-    display: none;
-}
-.panel-heading {
-    cursor: pointer;
-}
-.panel-heading:hover {
-    background-color: #eaeaea;
-}
-@media only screen and (max-width: 500px) {
-    .media-left {
-        display: block;
-        clear: Both;
-    }
-    .media-left .moviePosterThumb {
-        max-height: 250px;
-        clear: both;
-        display: block;
-    }
-}
+

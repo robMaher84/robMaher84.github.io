@@ -1,188 +1,38 @@
 ﻿<!DOCTYPE html>
 <html lang="en" ng-app="movieApp">
-
-<head>
+  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Robert Maher's portfolio website">
   <meta name="author" content="">
-  <title>Movie List Test</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body ng-controller="movieSearchCtrl" class="ng-cloak">
-  <div class="container" ng-controller="myMovieListController">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="panel">
-          <h1>Movie List Test</h1>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="panel">
-          <div ng-include="'./partials/createAListForm.html'"></div>
-        </div>
-        <div class="panel">
-          <h3>Add Movie To Multiple Lists</h3>
-          <div ng-show="multiListSelection">
-            Adding: {{searchedForMovie.Title}}
-            <table class="table table-hover">
-              <tr>
-                <th>Title</th>
-                <th>Movie Count</th>
-                <tr>
-                  <tbody>
-                    <tr ng-repeat="list in myMoviesLists" ng-class="{'bg-success':selectedMultiLists.indexOf($index)!=-1}" ng-click="buildTargetList(list.listName);toggleMultiList($index);">
-                      <td>
-                        {{list.listName}}
-                      </td>
-                      <td>
-                        {{list.moviesForList.length}}
-                      </td>
-                    </tr>
-                  </tbody>
-            </table>
-            <button class="btn" ng-disabled="selectedMultiLists.length == 0" ng-class="{'btn-success':selectedMultiLists.length > 0}"
-              ng-click="addMovieToLists(searchedForMovie);">
-              Add Movie To Selected Lists
-            </button>
-            <button class="btn" ng-click=" multiListSelection = !multiListSelection; ">
-              Cancel
-            </button>
-          </div>
-          <div ng-show="!multiListSelection">
-            <div class="input-group">
-              <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
-              <input type="text" class="form-control" aria-describedby="basic-addon1" typeahead-on-select="grabMovieData()" ng-model="movieSearch"
-                onclick="select()" placeholder="Search for a movie" uib-typeahead="result as result.suggest for result in getSuggest($viewValue)"
-                typeahead-min-length="3" autofocus>
-            </div>
-            <div ng-show="searchedForMovie.Title != undefined">
-              <div ng-if="myMoviesLists.length == 0" class="alert alert-info" role="alert">
-                Create some lists first!
-              </div>
-              <button ng-show="myMoviesLists.length != 0" class="btn btn-success" ng-click="multiListSelection = !multiListSelection;">Pick some lists to add this movie to</button><br><br>
-              <div class="media-left media-top">
-                <img ng-src="{{searchedForMovie.Poster}}" class="moviePosterThumb media-object img-rounded"> My Rating:
-                <span ng-class="{ green : searchedForMovie.MyUserRating == 'good'}" class="glyphicon glyphicon-thumbs-up ratingThumb" aria-hidden="true"
-                  ng-click="rateMovie(searchedForMovie.Title,'good')"></span>
-                <span ng-class="{ bad : searchedForMovie.MyUserRating == 'bad'}" class="glyphicon glyphicon-thumbs-down ratingThumb" aria-hidden="true"
-                  ng-click="rateMovie(searchedForMovie.Title,'bad')"></span>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">{{searchedForMovie.Title}}</h4>
-                Year: {{searchedForMovie.Year}} | Genre: {{searchedForMovie.Genre}} | IMDB Rating: {{searchedForMovie.Ratings[0].Value}}<br>                Actors: {{searchedForMovie.Actors}}
-                <br>
-                <hr> {{searchedForMovie.Plot}}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-8 ">
-        <div class="panel" ng-show="showLists">
-          <h3>Movie Lists <small>Total Lists: {{myMoviesLists.length}}</small></h3>
-          <div ng-if="myMoviesLists.length == 0" class="alert alert-info" role="alert">
-            You have no lists.
-          </div>
-          <table class="table table-hover" ng-show="myMoviesLists.length > 0">
-            <tr>
-              <th>Title</th>
-              <th>Movie Count</th>
-              <th>Average IMDB Rating</th>
-              <tr>
-                <tbody ng-click="showLists = !showLists;">
-                  <tr ng-repeat="lists in myMoviesLists" ng-click="showMoviesInList($index); toggleMovieList($index);">
-                    <td>
-                      {{lists.listName}}
-                    </td>
-                    <td>
-                      {{lists.moviesForList.length}}
-                    </td>
-                    <td>
-                      {{returnAverageRating(lists.moviesForList)}}
-                    </td>
-                  </tr>
-                </tbody>
-          </table>
-        </div>
-        <div class="panel fade1 panel-default movieListDescription" ng-init="init()" ng-show="!showLists">
+  <title>Rivers Agile | IMDB Test</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+		</head>
+  <body ng-controller="movieSearchCtrl">
 
-          <div class="panel-heading" ng-click="showLists = !showLists;">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back to movie lists
-          </div>
-          <div class="panel-body">
-            <div ng-if="myMoviesLists.length == 0" class="alert alert-info" role="alert">
-              <h3>Create a list</h3>
-              Create some lists!
-            </div>
-            <div ng-hide="myMoviesLists.length == 0">
-              <h3>{{selectedList.listName}} <small>Total Movies:{{selectedList.moviesForList.length}} | Average IMDB Rating: {{averageRating}}/10 </small></h3>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
-                    <input type="text" class="form-control" ng-model="searchFilter" placeholder="Filter movies">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span>
-                    <input type="text" class="form-control" typeahead-on-select="addMovieToList()" ng-model="movieViewSearch" onclick="select()"
-                      placeholder="Add a movie to this list" uib-typeahead="result as result.suggest for result in getSuggest($viewValue)"
-                      typeahead-min-length="3" autofocus>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="pull-right sortOptions">
-                    <div class="input-group">
-                      <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span></span>
-                      <select class="form-control" ng-model="selectedSort" ng-options="sortOption.name for sortOption in sortOptions" ng-change="sortBy(selectedSort.value)"></select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div ng-if="moviesInSelectedList.length == 0" class="alert alert-info" role="alert">
-                Add some movies to this list!
-              </div>
-              <div class="panel moviePanel" ng-repeat="movie in moviesInSelectedList | filter: searchFilter | orderBy: sortingOption">
-                <div class="movieListItem">
-                  <div class="media-left media-top">
-                    <img ng-src="{{movie.Poster}}" class="moviePosterThumb media-object img-rounded"> <br> My Rating:<br>
-                    <span ng-class="{ green : movie.MyUserRating == 'good'}" class="glyphicon glyphicon-thumbs-up ratingThumb" aria-hidden="true"
-                      ng-click="rateMovie(movie.Title,'good')"></span>
-                    <span ng-class="{ bad : movie.MyUserRating == 'bad'}" class="glyphicon glyphicon-thumbs-down ratingThumb" aria-hidden="true"
-                      ng-click="rateMovie(movie.Title,'bad')"></span>
-                  </div>
-                  <div class="media-body">
-                    <h4 class="media-heading">{{movie.Title}}</h4>
-                    <button class="btn btn-warning remove-btn" ng-click="removeMovieFromList(movie.Title)"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>                    Year: {{movie.Year}} | Genre: {{movie.Genre}} | IMDB Rating: {{movie.Ratings[0].Value}}<br> Actors: {{movie.Actors}}
-                    <br>
-                    <hr> {{movie.Plot}}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="container">
+      <row>
+        <div class="col-md-4 panel">
+          <div ng-include="'./partials/createAListForm.html'"></div>
+          
         </div>
-      </div>
+        <div class="col-md-8 panel">
+        </div>
+      </row>
+
     </div>
-  </div>
-  <!--Base-->
-  <script src="js/base/angular.min.js"></script>
-  <script src="js/base/ui-bootstrap-custom-tpls-0.14.3.min.js"></script>
-  <script src="js/movieApp.js"></script>
-  <!--Controllers-->
-  <script src="js/controllers/controller.moviesearch.js"></script>
-  <script src="js/controllers/controller.createlistform.js"></script>
-  <script src="js/controllers/controller.mymovielists.js"></script>
-  <!--Services-->
-  <script src="js/services/service.imdbService.js"></script>
-  <script src="js/services/service.myListsService.js"></script>
-  <!--Directives-->
-  <script src="js/directives/directive.movieSearch.js"></script>
-</body>
+    <!--Bootstrap-->
+    <script src="js/angular.min.js"></script>
+    <script src="js/ui-bootstrap-custom-tpls-0.14.3.min.js"></script>
+    <script src="js/movieApp.js"></script>
+    <!--Controllers-->
+    <script src="js/controllers/controller.moviesearch.js"></script>
+    <!--Services-->
+    <script src="js/services/service.imdbService.js"></script>
+    <script src="js/services/service.myListsService.js"></script>
+    <!--Directives-->
+    <script src="js/directives/directive.movieSearch.js"></script>
+    </body>
 </html>

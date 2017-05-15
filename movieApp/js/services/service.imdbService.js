@@ -5,7 +5,7 @@ angular
   var runUserRequest = function(paramObj) {
     return $http({
       method: 'GET',
-      url: "https://www.omdbapi.com/",
+      url: "http://www.omdbapi.com/",
       params: paramObj
     });
   };
